@@ -18,7 +18,7 @@
   border-radius: 35%;
   box-shadow: 1px 1px 8px 2px rgba(143, 143, 143, 0.4);
   color: black;
-  gap: 8px;
+  gap: 16px;
   width: 256px;
   height: 256px;
   display: flex;
@@ -28,13 +28,14 @@
   color: #505050;
 }
 .logo span {
-    font-size: 28px;
+    font-size:1.8em;
     font-weight: 500;
     padding-top: 12px;
 }
 .logo img {
   filter: invert(25%) sepia(0%) saturate(1090%) hue-rotate(146deg)
     brightness(96%) contrast(73%);
+    transform: translate(12px,0);
 
   width: 128px;
   height: 128px;
