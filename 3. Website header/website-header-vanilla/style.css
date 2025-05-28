@@ -13,6 +13,12 @@
   padding: 0;
 }
 
+.font-alt {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 button {
   background-color: transparent;
   width: auto;
@@ -91,9 +97,6 @@ button {
   transition: all 0.25s;
   cursor: pointer;
 }
-.navigation-btn:hover {
-  font-weight: 600;
-}
 
 .navigation-buttons {
   padding-right: 8px;
@@ -104,6 +107,10 @@ button {
 }
 .navigation-buttons hr {
   width: 5rem;
+}
+
+.navigation-btn:hover {
+  font-weight: 600;
 }
 
 .thumbnail-section .div3 {
@@ -122,7 +129,7 @@ button {
 }
 .social-buttons {
   display: flex;
-  gap: 56px;
+  gap: 4vw;
   padding: 20px;
   align-items: center;
 }
@@ -145,7 +152,7 @@ button {
   justify-content: end;
   align-items: center;
   width: 100%;
-  gap: 80px;
+  gap: 5vw;
 }
 
 .dot {
@@ -270,6 +277,10 @@ button {
   display: none;
 }
 
+.navigation-buttons-mobile {
+  display: none;
+}
+
 @media all and (max-width: 2000px) {
   .shop-btn {
     display: none;
@@ -283,7 +294,6 @@ button {
   .images-container {
     justify-content: center;
   }
-  
 }
 
 @media all and (max-width: 1377px) {
@@ -300,32 +310,33 @@ button {
 
   .images-container {
     justify-content: start;
-    padding-top: 56px;
+    padding-top: 72px;
+    min-width: 240px;
   }
   .img-1 {
-    align-self: center;
+    align-self: flex-end;
     width: 240px;
   }
   .img-2 {
     width: 240px;
-    align-self: center;
+    align-self: flex-start;
   }
 
   .shop-btn {
     display: block;
     bottom: 1rem;
     height: 56px;
+    min-width: 240px;
   }
   .side-description {
-    right: -14rem;
+    right: -14.5rem;
   }
   .language-toggle {
-    right: 1.5rem;
+    right: 0.9rem;
   }
 
   .thumbnail-section .div3 {
     font-size: 7rem;
-    text-align: center;
   }
 
   .thumbnail-section {
@@ -333,21 +344,23 @@ button {
   }
 
   .thumbnail-section .div4 {
-    flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
     gap: 32px;
   }
   .social-buttons {
-    gap: 80px;
+    gap: 16px;
   }
   .social-btn {
     font-size: 14px;
   }
 
   .carousel-indicators {
-    padding-right: 0px;
+    padding-right: 16px;
+    width: auto;
     justify-content: center;
+    gap: 32px;
   }
 
   .nav-section {
@@ -361,7 +374,6 @@ button {
 @media all and (min-width: 480px) and (max-width: 768px) {
   .thumbnail-section .div3 {
     font-size: 6rem;
-    text-align: center;
   }
 }
 
@@ -370,12 +382,42 @@ button {
     font-size: 1rem;
     line-height: 1.3rem;
     flex-direction: column;
-    text-align: center;
-    gap: 8px;
-    justify-content: end;
+    align-items: start;
   }
   .thumbnail-section .div3 {
     font-size: 5em;
-    text-align: center;
+  }
+
+  .navigation-btn {
+    position: relative;
+    transition: all 0.25s;
+    cursor: pointer;
+  }
+
+  .navigation-buttons {
+    display: none;
+  }
+
+  .navigation-buttons-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navigation-button-mobile {
+    padding-left: 8px;
+    padding-right: 8px;
+    transform: scale(2);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation-button-mobile:hover {
+    background-color: rgb(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 9999px;
   }
 }

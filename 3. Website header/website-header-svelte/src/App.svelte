@@ -2,6 +2,8 @@
   import CarouselImage1 from "./assets/carousel-1.jpeg";
   import Image1 from "./assets/image1.jpeg";
   import Image2 from "./assets/image2.jpeg";
+  import ChevronLeft from "./assets/icon-chevron-left.svg"
+  import ChevronRight from "./assets/icon-chevron-right.svg"
   import "./app.css";
 </script>
 
@@ -11,7 +13,7 @@
     class="grid col-span-3 grid-cols-5 grid-rows-4 gap-2 md:p-16 p-4 h-screen bg-no-repeat bg-cover text-white bg-red-200"
   >
     <div class="div1 row-span-1 row-start-1">
-      <button class="flex items-center gap-2 md:text-[1vw] text-md font-medium">
+      <button class="flex items-center gap-8 md:text-[1vw] text-md font-medium md:-translate-x-5  hover:bg-white/25 transition-all transition-300 rounded-lg p-2 cursor-pointer -translate-x-2">
         <svg
           class="w-6 h-6"
           fill="none"
@@ -31,12 +33,12 @@
     <div
       class="col-span-5 row-start-2 place-content-end text-2xl  flex justify-between items-start md:items-center row-span-1 md:flex-row flex-col"
     >
-      <div class="md:text-[1vw] text-md leading-8 md:leading-[1.5vw]">
+      <div class="md:text-[16px] text-sm leading-5 md:leading-[20px] ">
         Summer <br />
         Collection <br />2020
       </div>
 
-      <div class="pr-2 flex gap-6 text-white items-center text-sm">
+      <div class="pr-2  gap-6 text-white items-center text-sm hidden md:flex">
         <button
           class="relative transition-all duration-200 cursor-pointer hover:font-semibold"
         >
@@ -48,6 +50,16 @@
         >
           <span> Previous </span>
         </button>
+      </div>
+
+      <div class="md:hidden flex w-full justify-between">
+          <button class="cursor-pointer w-12 h-12 hover:bg-white/25 rounded-full  transition-all flex transition-300 items-center justify-center">
+            <img src={ChevronLeft} alt="Slide left">
+          </button>
+          <button class="cursor-pointer w-12 h-12 hover:bg-white/25 rounded-full  transition-all flex transition-300 items-center justify-center">
+
+            <img src={ChevronRight} alt="Slide left">
+          </button>
       </div>
     </div>
     <div class="col-span-5 row-start-3 md:text-[6vw] text-7xl place-content-center font-alt">
@@ -87,11 +99,11 @@
   </div>
   <div class="col-span-2 box-content p-[4em] relative ">
     <div
-      class="absolute md:right-[4.5em] md:top-[4.5em] right-[2em] top-[1em] inline-flex text-right text-sm mb-4 gap-14"
+      class="absolute md:right-[4em] md:top-[4.5em] right-[1.5em] top-[1em] inline-flex text-right text-sm mb-4 gap-14"
     >
       <a class="ml-2 text-black  text-md cursor-pointer font-bold hover:text-white transition-all">ENG</a
       >
-      <a class="ml-2 text-black font-bold text-md cursor-pointer hover:text-white transition-all">FR</a>
+      <a class="ml-2 text-gray-400 font-bold text-md cursor-pointer hover:text-white transition-all">FR</a>
     </div>
 
     <div
