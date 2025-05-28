@@ -1,0 +1,55 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.logo {
+  padding: 24px;
+  background-color: white;
+  border-radius: 35%;
+  box-shadow: 1px 1px 8px 2px rgba(143, 143, 143, 0.4);
+  color: black;
+  gap: 8px;
+  width: 256px;
+  height: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #505050;
+}
+.logo span {
+    font-size: 28px;
+    font-weight: 500;
+    padding-top: 12px;
+}
+.logo img {
+  filter: invert(25%) sepia(0%) saturate(1090%) hue-rotate(146deg)
+    brightness(96%) contrast(73%);
+
+  width: 128px;
+  height: 128px;
+}
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+  background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+  background-image: radial-gradient(35% 59% at 85% 46%, #dfc6ff 0%, #073AFF00 100%),radial-gradient(37% 27% at 69% 34%, #dfc6ff 0%, #073AFF00 100%),radial-gradient(113% 91% at 6% 7%, #aedffe 0%, #FF000000 49%),radial-gradient(142% 57% at 110% -3%, #4B88FFFF 1%, #FF000000 82%),linear-gradient(0deg, #FFFFFFFF 1%, #FFFFFFFF 99%);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

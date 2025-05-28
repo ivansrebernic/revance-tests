@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Hover</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body class="container">
+    <div class="blue-gradient"></div>
+    <div class="nav-bar">
+      <a
+        id="animation"
+        class="navigation-item"
+        onclick="handleClick('animation')"
+        onmouseenter="handleMouseEnter('animation')"
+        onmouseleave="handleMouseLeave('animation')"
+      >
+        Animation
+      </a>
+      <a
+        id="branding"
+        class="navigation-item"
+        onclick="handleClick('branding')"
+        onmouseenter="handleMouseEnter('branding')"
+        onmouseleave="handleMouseLeave('branding')"
+      >
+        Branding
+      </a>
+      <a
+        id="illustration"
+        class="navigation-item"
+        onclick="handleClick('illustration')"
+        onmouseenter="handleMouseEnter('illustration')"
+        onmouseleave="handleMouseLeave('illustration')"
+      >
+        Illustration
+      </a>
+    </div>
+  </body>
+</html>

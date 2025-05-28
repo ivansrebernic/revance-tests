@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <main class="container">
+    <div class="card">
+      <div class="card-header">
+        <h1 id="month" class="card-title"></h1>
+        <h4 id="fullDate" class="card-subtitle"></h4>
+      </div>
+
+      <hr class="card-divider" />
+
+      <div class="card-body" id="todoList"></div>
+
+      <form class="task-input-form" id="todoForm">
+        <div class="task-input">
+          <input type="text" placeholder="Add Task" id="todoInput" />
+        </div>
+        <button type="submit" class="add-button">Add</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</html>
